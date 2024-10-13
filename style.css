@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+}
+.border{
+    border: solid 1px ;
+}
+.row{
+    margin-top: 80px;
+    margin-left: 150px;
+   
+}
+.col-6{
+    margin-top: 100px;
+}
+#tempHead{
+    color: rgb(68, 125, 125);
+}
+#degreeHead{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color:  rgb(68, 125, 125);
+}
+#conversionDegree{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color:  rgb(68, 125, 125);
+}
+button{
+    margin-top: 100px;
+    margin-left: 250px;
+    background-color:  rgb(68, 125, 125);
+    border: none;
+}
+.result{
+    margin-top: 200px;
+   color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.resultSection{
+    background-color: rgb(68, 125, 125) ;
+}

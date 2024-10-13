@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- input section -->
+      
+       <div class="container row">
+        <div class="col-6 py-5 border ">
+          <!-- heading -->
+          <div>
+            <h1 id="tempHead">Enter temperature</h1>
+          </div>
+          <!-- input textbox -->
+          <div class="inputBox">
+            <label id="degreeHead" for="degreeInput">Degree</label> <br>
+            <div class="input-group">
+              <input class="form-control" type="number" id="degreeInput" placeholder="0">
+              <div class="input-group-append">
+                <select class="form-control" name="" id="inputUnit">
+                  <option value="celsius">&deg;C</option>
+                  <option value="Farenheit">&deg;F</option>
+                  <option value="kelvin">&deg;K</option>
+                </select>
+              </div>
+            </div>
+            
+          </div>
+          <!--  conversion box -->
+          
+            <label id="conversionDegree" for="conersionInput">Convert In</label> <br>
+            <div class="input-group d-inline-block">
+              
+              <div class="input-group-append ">
+                <select class="form-control" name="" id="conersionInput">
+                  <option value="celsius">&deg;C</option>
+                  <option value="Farenheit">&deg;F</option>
+                  <option value="kelvin">&deg;K</option>
+                </select>
+              </div>
+            </div>
+          
+          <!-- button -->
+           <div>
+            <button onclick="convertTemperature()" class="py-2 px-3 rounded-pill text-light">Convert In</button>
+           </div>
+        </div>
+        <div class="col-6 resultSection">
+          <!-- result section -->
+          <div class="result">
+            <h1 id="convertedDegree">37</h1>
+          <h1 id="degree">&deg;</h1>
+          <h3 id="convertedUnit">C</h3>
+          </div>
+          
+        </div>
+       </div>
+      
+      
+      
+    <!-- output section -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
